@@ -16,6 +16,7 @@ main {
 .form {
     background-color: #1f1f1f;
     display: inline-block;
+    padding: 0.25cm;
 }
 
 .form label {

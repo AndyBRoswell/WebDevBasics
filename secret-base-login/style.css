@@ -8,8 +8,13 @@ body {
     background-color: black;
 }
 
+main {
+    text-align: center;
+}
+
 .form {
     background-color: #1f1f1f;
+    display: inline-block;
 }
 
 .form label {

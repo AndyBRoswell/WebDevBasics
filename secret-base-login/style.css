@@ -2,6 +2,7 @@
     font-family: Consolas, sans-serif;
     border-color: dimgray;
     color: lightgray;
+    box-sizing: border-box;
 }
 
 body {
@@ -19,6 +20,11 @@ main {
 
 .form label {
     color: lightgray;
+}
+
+.form input {
+    width: 10cm;
+    max-width: 90vw;
 }
 
 .form input, button {

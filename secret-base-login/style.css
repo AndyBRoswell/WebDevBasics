@@ -1,5 +1,5 @@
 * {
-    font-family: Consolas, serif;
+    font-family: Consolas, sans-serif;
     border-color: dimgray;
     color: lightgray;
 }
@@ -19,10 +19,6 @@ body {
     color: lightgray;
 }
 
-.form input {
-    background-color: #3f3f3f;
-}
-
-.form button {
+.form input, button {
     background-color: #3f3f3f;
 }

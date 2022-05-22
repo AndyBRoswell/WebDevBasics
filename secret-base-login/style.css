@@ -1,0 +1,16 @@
+body {
+    background-color: black;
+    font-family: Consolas, serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form label {
+    color: lightgray;
+}
+
+.form input {
+    background-color: #3f3f3f;
+    color: lightgray;
+}

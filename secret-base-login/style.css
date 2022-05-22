@@ -20,13 +20,25 @@ main {
 
 .form label {
     color: lightgray;
-}
-
-.form input {
-    width: 10cm;
-    max-width: 90vw;
+    float: left;
+    height: 2em;
+    display: flex;
+    align-items: center;
 }
 
 .form input, button {
     background-color: #3f3f3f;
+}
+
+.form input {
+    height: 2em;
+    width: 10cm;
+    max-width: 90vw;
+    font-size: 1em;
+}
+
+.form button {
+    font-size: 1em;
+    height: 3em;
+    width: 25%;
 }

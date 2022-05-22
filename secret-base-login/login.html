@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+</head>
+<body>
+<main>
+    <form>
+        <label for="username">用户名</label><br>
+        <input type="text" id="username" pattern="[0-9A-Za-z@_\\-]+" maxlength="32" required><br>
+        <label for="password">密码</label><br>
+        <input type="password" id="password" minlength="8" maxlength="32" required><br>
+        <label for="secure-token">安全令牌</label><br>
+        <input type="password" id="secure-token" pattern="[0-9A-Fa-f]+" minlength="16" maxlength="32" required><br>
+        <button type="submit">登录</button>
+    </form>
+</main>
+</body>
+</html>

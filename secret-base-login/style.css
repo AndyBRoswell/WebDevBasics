@@ -12,5 +12,12 @@ body {
 
 .form input {
     background-color: #3f3f3f;
+    border-color: dimgray;
+    color: lightgray;
+}
+
+.form button {
+    background-color: #3f3f3f;
+    border-color: dimgray;
     color: lightgray;
 }

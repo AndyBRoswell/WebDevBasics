@@ -1,9 +1,18 @@
+* {
+    font-family: Consolas, serif;
+    border-color: dimgray;
+    color: lightgray;
+}
+
 body {
     background-color: black;
-    font-family: Consolas, serif;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.form {
+    background-color: #1f1f1f;
 }
 
 .form label {
@@ -12,12 +21,8 @@ body {
 
 .form input {
     background-color: #3f3f3f;
-    border-color: dimgray;
-    color: lightgray;
 }
 
 .form button {
     background-color: #3f3f3f;
-    border-color: dimgray;
-    color: lightgray;
 }

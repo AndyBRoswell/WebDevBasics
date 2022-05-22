@@ -6,17 +6,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header>
+    <h1>Secret Base Login System</h1>
+</header>
 <main>
     <form class="form">
         <label for="username">用户名</label><br>
         <input type="text" id="username" pattern="[0-9A-Za-z@_\\-]+" maxlength="32" required><br>
         <label for="password">密码</label><br>
         <input type="password" id="password" minlength="8" maxlength="32" required><br>
-        <label for="secure-token">安全令牌</label><br>
-        <input type="password" id="secure-token" pattern="[0-9A-Fa-f]+" minlength="16" maxlength="32" required><br>
+        <label for="sec-token">安全令牌</label><br>
+        <input type="password" id="sec-token" pattern="[0-9A-Fa-f]+" minlength="16" maxlength="32" required><br>
         <br>
         <button type="submit">登录</button>
     </form>
 </main>
+<footer>
+
+</footer>
 </body>
 </html>

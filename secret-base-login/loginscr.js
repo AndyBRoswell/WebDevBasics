@@ -1,12 +1,11 @@
 const LoginButton = document.getElementById('login-button')
 const LoginResult = document.getElementById('login-result')
-const Username = document.getElementById('username').innerHTML
-const PassWord = document.getElementById('password').innerHTML
+const Username = document.getElementById('username').value
 LoginButton.onclick = () => {
     LoginResult.innerHTML = ''
     const UsernameRE = /^[0-9A-Za-z@_\-\.]+$/
     const SecTokenSegRE = /^[0-9A-Fa-f]+$/
     if (UsernameRE.test(Username) === false) {
-        LoginResult.innerHTML = `用户名的长度必须是 1 至 32 位，且仅允许包含：阿拉伯数字、大小写英文字母、4个特殊字符@，_，-，.`
+        LoginResult.innerHTML = `用户名的长度必须是 1 至 32 位，且仅允许包含：阿拉伯数字、大小写英文字母、4个特殊字符@_-.`
     }
 }

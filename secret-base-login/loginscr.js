@@ -18,16 +18,23 @@ for (let SecTokenSegInput in SecTokenSegInputs) {
 LoginButton.onclick = () => {
     LoginResult.innerHTML = ''
     const Username = UsernameInput.value
-    if (CheckUsername(Username) === false) return
+    if (CheckUsername(Username) === false) return false
+    let SecureToken = ''
     for (let SecTokenSegInput in SecTokenSegInputs) {
-        if (CheckSecureTokenChar(SecTokenSegInput.value) === false) return
+        SecureToken += SecTokenSegInput.value
     }
+    if (SecureToken.length !== 16 && SecureToken.length !== 32) {
+        LoginResult.innerHTML += '安全令牌的长度为16（一代令牌）或32（二代令牌）\n'
+        return false
+    }
+    if (CheckSecureTokenChar(SecureToken) === false) return false
+    return true
 }
 
 // ================================================================
 
 function CheckUsername(Username) {
-    const UsernameRE = /^[0-9A-Za-z@_\-\.]+$/
+    const UsernameRE = /^[\dA-Za-z@_\-\.]+$/
     if (UsernameRE.test(Username) === false) {
         LoginResult.innerHTML += '用户名的长度必须是 1 至 32 位，且仅允许包含：阿拉伯数字、大小写英文字母、4个特殊字符@_-.\n'
         return false
@@ -36,9 +43,9 @@ function CheckUsername(Username) {
 }
 
 function CheckSecureTokenChar(SecToken) {
-    const SecTokenRE = /^[0-9A-Fa-f]+$/
+    const SecTokenRE = /^[\dA-Fa-f]+$/
     if (SecTokenRE.test(SecToken) === false) {
-        LoginResult.innerHTML += '安全令牌只能包含十六进制字符，且长度为16（一代令牌）或32（二代令牌）\n'
+        LoginResult.innerHTML += '安全令牌只能包含十六进制字符\n'
         return false
     }
     return true

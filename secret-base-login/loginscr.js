@@ -13,7 +13,6 @@ for (let SecTokenSegInput in SecTokenSegInputs) {
         CheckSecureTokenChar(e.target.value)
     }
 }
-
 LoginButton.onclick = () => {
     LoginResult.innerHTML = ''
     const Username = UsernameInput.value

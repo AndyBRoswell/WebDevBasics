@@ -9,6 +9,11 @@ body {
     background-color: black;
 }
 
+header .h0 {
+    font-family: "Times New Roman", sans-serif;
+    font-size: xxx-large;
+}
+
 main {
     text-align: center;
 }
@@ -21,10 +26,6 @@ main {
 
 .form label {
     color: lightgray;
-    float: left;
-    height: 2em;
-    display: flex;
-    align-items: center;
 }
 
 .form input, button {
@@ -32,8 +33,8 @@ main {
 }
 
 .form input {
-    height: 2em;
-    width: 10cm;
+    height: 1.5em;
+    width: 33ch;
     max-width: 90vw;
     font-size: 1em;
 }
@@ -42,4 +43,9 @@ main {
     font-size: 1em;
     height: 3em;
     width: 25%;
+}
+
+.form .sec-token-input {
+    width: 5ch;
+    font-size: 1em;
 }

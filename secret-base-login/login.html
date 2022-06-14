@@ -7,16 +7,25 @@
 </head>
 <body>
 <header>
-    <h1>Secret Base Login System</h1>
+    <h1 class="h0">Secret Base Login System</h1>
 </header>
 <main>
     <form class="form">
-        <label for="username">用户名</label><br>
+        <label for="username">用户名</label>
         <input type="text" id="username" pattern="[0-9A-Za-z@_\-\.]+" maxlength="32" required><br>
-        <label for="password">密码</label><br>
+        <label for="password">密　码</label>
         <input type="password" id="password" minlength="8" maxlength="32" required><br>
-        <label for="sec-token">安全令牌</label><br>
-        <input type="password" id="sec-token" pattern="[0-9A-Fa-f]+" minlength="16" maxlength="32" required><br>
+        <fieldset id="sec-token">
+            <legend>安全令牌</legend>
+            <input class="sec-token-input" type="password" maxlength="4" required>
+            <input class="sec-token-input" type="password" maxlength="4" required>
+            <input class="sec-token-input" type="password" maxlength="4" required>
+            <input class="sec-token-input" type="password" maxlength="4" required>
+            <input class="sec-token-input" type="password" maxlength="4">
+            <input class="sec-token-input" type="password" maxlength="4">
+            <input class="sec-token-input" type="password" maxlength="4">
+            <input class="sec-token-input" type="password" maxlength="4">
+        </fieldset>
         <br>
         <button type="submit">登录</button>
     </form>

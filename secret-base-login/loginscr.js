@@ -7,7 +7,6 @@ UsernameInput.oninput = (e) => {
     LoginResult.innerHTML = ''
     CheckUsername(e.target.value)
 }
-
 for (let SecTokenSegInput in SecTokenSegInputs) {
     SecTokenSegInput.oninput = (e) => {
         LoginResult.innerHTML = ''
@@ -27,8 +26,7 @@ LoginButton.onclick = () => {
         LoginResult.innerHTML += '安全令牌的长度为16（一代令牌）或32（二代令牌）\n'
         return false
     }
-    if (CheckSecureTokenChar(SecureToken) === false) return false
-    return true
+    return CheckSecureTokenChar(SecureToken) !== false;
 }
 
 // ================================================================

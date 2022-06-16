@@ -7,7 +7,7 @@ UsernameInput.oninput = (e) => {
     LoginResult.innerHTML = ''
     CheckUsername(e.target.value)
 }
-for (let SecTokenSegInput in SecTokenSegInputs) {
+for (let SecTokenSegInput of SecTokenSegInputs) {
     SecTokenSegInput.oninput = (e) => {
         LoginResult.innerHTML = ''
         CheckSecureTokenChar(e.target.value)
@@ -18,7 +18,7 @@ LoginButton.onclick = () => {
     const Username = UsernameInput.value
     if (CheckUsername(Username) === false) return false
     let SecureToken = ''
-    for (let SecTokenSegInput in SecTokenSegInputs) {
+    for (let SecTokenSegInput of SecTokenSegInputs) {
         SecureToken += SecTokenSegInput.value
     }
     if (SecureToken.length !== 16 && SecureToken.length !== 32) {

@@ -1,2 +1,8 @@
-const body = document.getElementsByTagName("body")[0];
-body.style.backgroundColor = '#000000';
+const body = document.body
+window.addEventListener('click', () => {
+    while (true) {
+        body.style.backgroundColor = '#000000'
+        body.style.backgroundColor = '#FFFFFF'
+        console.log('Loop executed.')
+    }
+})

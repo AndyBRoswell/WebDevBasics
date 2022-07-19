@@ -3,7 +3,7 @@ const body = document.body
 demo();
 
 async function demo() {
-    const delay = 250;
+    const FPSmax = 120, delay = 1000 / FPSmax;
     while (true) {
         body.style.backgroundColor = '#000000'
         await sleep(delay)

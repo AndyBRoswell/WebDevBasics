@@ -1,16 +1,19 @@
 class global {
-    static get Synonym() {
-        return [
-            []
-        ]
-    }
+    static synonym = {}
 
     static tag = []
 }
 
+// set synonyms
 {
-    let x
-
-    x = '力学 电磁学 热学 光学 原子物理'
-    
+    let c = 0
+    let synonym = [
+        '力 力学',
+        '热 热学',
+        '电磁 电磁学 电与磁 电和磁',
+        '光 光学',
+        '近代物理 近代物理学 现代物理 现代物理学 原子物理 原子物理学'
+    ]
 }
+
+console.log(global.synonym)

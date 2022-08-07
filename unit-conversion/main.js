@@ -14,6 +14,8 @@ class global {
         '光 光学',
         '近代物理 近代物理学 现代物理 现代物理学 原子物理 原子物理学',
     ]
+    synonym.forEach(g => {
+        ++c
+        global.synonym[c] = g.split(' ')
+    })
 }
-
-console.log(global.synonym)

@@ -1,5 +1,6 @@
 class global {
-    static synonym = {}
+    static Synonym = {}
+    static SynonymID = {}
 
     static tag = []
 }
@@ -17,9 +18,10 @@ class global {
     ]
     synonym.forEach(g => {
         ++c
-        global.synonym[c] = g.split(' ')
+        global.Synonym[c] = g.split(' ')
     })
 }
 {
 
 }
+console.log(global.Synonym)
